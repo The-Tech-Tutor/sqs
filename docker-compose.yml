@@ -1,0 +1,8 @@
+version: '2'
+services:
+  sqs:
+    image: s12v/elasticmq
+    ports:
+      - "9324:9324"
+    volumes:
+      - ./src/main/resources/sqs/elasticmq.conf:/etc/elasticmq/elasticmq.conf
